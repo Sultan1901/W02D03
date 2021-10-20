@@ -49,7 +49,13 @@ function b66() {
   chimg2.style.top = "-500px";
 }
 // 6
-///////////////////
+submitBtn.addEventListener("click", () => {
+  if (value) {
+    alert("Data saved.");
+  } else {
+    alert("It is Empty");
+  }
+});
 
 // 7
 
@@ -75,11 +81,21 @@ alert('yor page loaded')
 
 // 10
 
-const pcolor = document.querySelectorAll('p')
-pcolor.addEventListener('mouseenter' , h88)
-function h88() {
-  pcolor.style.color = 'red'
+const chco = document.querySelectorAll('p')
+chco.forEach((element) => {
+  element.addEventListener('mouseenter', () =>{
+    element.style.background = "red"
+  })
 }
+ 
+
+  
+    
+  
+
+
+
+
 
 
 
